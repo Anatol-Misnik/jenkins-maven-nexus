@@ -160,7 +160,7 @@ THE SOFTWARE.
     Note that the 'repositories' and 'pluginRepositories' blocks below are actually copy-pasted
     from the Jenkins org pom. This is on purpose to keep Jenkins core buildable even if one has
     *not* defined the specific details in the settings.xml file.
-  -->
+  
 
   <pluginRepositories>
     <pluginRepository>
@@ -168,7 +168,8 @@ THE SOFTWARE.
       <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
-
+  -->
+  
   <build>
     <defaultGoal>install</defaultGoal>
     <resources>
