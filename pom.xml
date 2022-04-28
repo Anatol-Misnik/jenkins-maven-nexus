@@ -28,18 +28,18 @@ THE SOFTWARE.
   <repositories>
     <repository>
       <id>maven-group</id>
-      <url>http://localhost:8081/repository/maven-group/</url>
+      <url>http://nexus/repository/maven-group/</url>
     </repository>
   </repositories>
 
   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://localhost:8081/repository/maven-snapshots/</url>
+      <url>http://nexus/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>nexus-releases</id>
-      <url>http://localhost:8081/repository/maven-releases/</url>
+      <url>http://nexus/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
   
@@ -161,13 +161,6 @@ THE SOFTWARE.
     from the Jenkins org pom. This is on purpose to keep Jenkins core buildable even if one has
     *not* defined the specific details in the settings.xml file.
   -->
-  <repositories>
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>https://repo.jenkins-ci.org/public/</url>
-      <!-- allow snapshots -->
-    </repository>
-  </repositories>
 
   <pluginRepositories>
     <pluginRepository>
